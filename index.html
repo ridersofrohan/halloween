@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <title>Union Scare</title>
+
+    <meta property="og:title" content="Union Scare" />
+    <meta property="og:description" content="Beware...the nightmare at Union Scare" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rohan Challa" />
+    <meta name="twitter:description" content="Rohan Challa's personal site." />
+  </head>
+  <body>
+    <audio id="player" autoplay loop>
+      <source src="monster-mash-trim.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="container">
+      <p class="title">Union Scare</p>
+      <p class="subtitle"> New Yorkers beware, should you dare, come to Union Scare </p>
+      <p id="countdown"></p>
+      <div class="when-where">
+        <div class="when text">OCT 30, 6PM</div>
+        <div class="where text">
+          <a href="https://goo.gl/maps/Gsu2N6kqcDTQypZ36" target="_blank" rel="noopener noreferrer">
+            23 E 17th St #6
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 30, 2021 18:00:00").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get today's date and time
+      var now = new Date().getTime();
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Display the result in the element with id="demo"
+      if (days > 0) {
+        document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      } else {
+        document.getElementById("countdown").innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+      }
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("coundtown").innerHTML = "SPOOKY TIME";
+      }
+    }, 1000);
+  </script>
+</html>
