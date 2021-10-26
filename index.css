@@ -43,10 +43,23 @@ a { color: inherit; }
 }
 
 .when-where {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.booze {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.when {
+  text-align: left;
+}
+
+.where {
+  text-align: right;
 }
 
 @media (min-width: 768px) {
@@ -68,5 +81,9 @@ a { color: inherit; }
 
   .text {
     font-size: 2rem;
+  }
+
+  .booze {
+    font-size: 2.5rem;
   }
 }
