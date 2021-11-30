@@ -8,38 +8,56 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
 
-    <title>Union Scare</title>
+    <title>Union Cheer</title>
 
-    <meta property="og:title" content="Union Scare" />
-    <meta property="og:description" content="Beware...the nightmare at Union Scare" />
+    <meta property="og:title" content="Union Cheer" />
+    <meta property="og:description" content="Tis the season for union cheer" />
     <meta property="og:image" content="og.png"/>
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Rohan Challa" />
-    <meta name="twitter:description" content="Rohan Challa's personal site." />
   </head>
   <body>
-    <audio id="player" autoplay loop>
-      <source src="monster-mash-trim.mp3" type="audio/mp3">
-    </audio>
-
     <div class="container">
-      <p class="title">Union Scare</p>
-      <p class="subtitle"> New Yorkers beware, should you dare, come to Union Scare </p>
+      <p class="title">Union Cheer</p>
+      <p class="subtitle">Holiday time is near</p>
+      <p class="subtitle">Let’s celebrate and cheer</p>
+      <p class="subtitle">Come and join for laughs and joy</p>
+      <p class="subtitle">Right here in Union Square</p>
       <p id="countdown"></p>
       <div class="booze text">Bring Booze</div>
       <div class="when-where">
-        <div class="when text">OCT 30, 6PM</div>
+        <div class="when text">DEC 12, 8PM</div>
         <div class="where text">Inquire for Location</div>
+      </div>
+
+
+      <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
       </div>
     </div>
   </body>
 
   <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Oct 30, 2021 18:00:00").getTime();
+    var countDownDate = new Date("Dec 12, 2021 20:00:00").getTime();
     // Update the count down every 1 second
     var x = setInterval(function() {
       // Get today's date and time
@@ -51,17 +69,15 @@
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      // Display the result in the element with id="demo"
-      if (days > 0) {
-        document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-      } else {
-        document.getElementById("countdown").innerHTML = `${hours}h ${minutes}m ${seconds}s`;
-      }
     
       // If the count down is finished, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("coundtown").innerHTML = "SPOOKY TIME";
+        document.getElementById("countdown").innerHTML = "LETS GET FESTIVE";
+      } else if (days > 0) {
+        document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      } else {
+        document.getElementById("countdown").innerHTML = `${hours}h ${minutes}m ${seconds}s`;
       }
     }, 1000);
   </script>
