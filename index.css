@@ -1,7 +1,7 @@
 html {
   width: 100%;
   box-sizing: border-box;
-  background-color: #E45826;
+  background-color: black;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -51,8 +51,12 @@ a { color: inherit; }
   border-bottom: 4px solid black;
 }
 
+.disclaimer-text {
+  font-size: 1.5rem;
+}
+
 .location-text {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .time-text {
@@ -111,6 +115,7 @@ a { color: inherit; }
 
 .ticket-text {
   font-size: 1rem;
+  border: 4px solid black;
 }
 
 .question-text {
@@ -125,6 +130,10 @@ a { color: inherit; }
 
   .header {
     font-size: 7rem;
+  }
+
+  .disclaimer-text {
+    font-size: 4rem;
   }
 
   .location-text {
