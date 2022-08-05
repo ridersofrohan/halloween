@@ -133,6 +133,19 @@ a { color: inherit; }
   text-decoration: none;
 }
 
+.sponsor-text {
+  font-size: 3rem;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+.june-shine {
+  max-width: 10%;
+  max-height: 10%;
+  margin-left: 10%;
+}
+
 @media (min-width: 768px) {
   .container{
     padding: 1rem;
