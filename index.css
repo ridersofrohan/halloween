@@ -14,7 +14,20 @@ body {
 a { color: inherit; }
 
 .container {
-  background-color: #F0A500;
+  /*background-color: #F0A500;*/
+  background-color: #A0C1D1;
+  /*background-color: #FFC4C1;*/
+  background-image: url('psych-background.webp');
+  background-blend-mode: hard-light;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  min-width: 95%;
+}
+
+.title-container {
+  background-color: #A0C1D1;
   color: black;
   text-align: center;
   padding: 1rem;
@@ -175,6 +188,10 @@ a { color: inherit; }
 
   .performer-text {
     font-size: 4rem;
+  }
+
+  .feature-text {
+    font-size: 2rem;
   }
 
   .bar-text {
